@@ -29,6 +29,7 @@
 
 .eventos__item h3 {
     grid-area: nome;
+    align-self: center;
 }
 
 .eventos__item h4 {
@@ -37,11 +38,34 @@
 
 .eventos__item h5 {
     grid-area: local;
+    align-self: end;
 }
 
 .eventos__item button {
     grid-area: botao;
 }
+
+
+/*Agenda*/
+.agenda__item {
+    display: grid;
+}
+
+.agenda__item img {
+    grid-column: 1/ 3;
+}
+
+.agenda__item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.agenda__item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;
+}
+
 
 
 @media (min-width: 720px) {
